@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('glss-web App', () => {
+describe('glss-jeff App', () => {
   let page: AppPage;
 
   beforeEach(() => {
