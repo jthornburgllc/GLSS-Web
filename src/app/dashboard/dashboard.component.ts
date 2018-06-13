@@ -21,3 +21,13 @@ getHeroes(): void {
     .subscribe(heroes => this.heroes = heroes.slice(1, 5));
 }
 }
+export class ZeroConfigComponent {}
+export class WithOptionsComponent implements OnInit {
+  dtOptions: DataTables.Settings = {};
+
+  ngOnInit(): void {
+    this.dtOptions = {
+      pagingType: 'full_numbers'
+    };
+  }
+}
